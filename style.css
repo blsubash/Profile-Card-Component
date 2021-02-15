@@ -48,12 +48,14 @@ body {
   grid-template-columns: 340px;
   grid-template-rows: 150px 150px 100px;
   grid-template-areas: 'head' 'main' 'foot';
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
   grid-area: 'head';
   background-image: url('./images/bg-pattern-card.svg');
-  border-radius: 15px 15px 0 0;
 }
 
 .main {
@@ -95,7 +97,6 @@ body {
 .footer {
   grid-area: 'foot';
   background-color: #fff;
-  border-radius: 0 0 15px 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
