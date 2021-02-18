@@ -13,10 +13,56 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Kumbh Sans', sans-serif;
   text-align: center;
   background-color: var(--dark-cyan);
   overflow: hidden;
-  color: var(--dark-gery);
+  /* color: var(--dark-gery); */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 95vh;
+}
+
+.card {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  border: hotpink solid 5px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.card-header {
+  height: 150px;
+  width: 100%;
+  background: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+}
+
+.card-main {
+  height: 150px;
+  width: 100%;
+  background-color: #b5179e;
+}
+
+.card-main-image {
+  border: white solid 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.card-footer {
+  height: 75px;
+  width: 100%;
+  background-color: #7209b7;
 }
